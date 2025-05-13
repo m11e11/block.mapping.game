@@ -4,9 +4,9 @@ let streets = [
         "name": "Beck",
         "block": "5800 West",
         "choices": [
-            "1500 East",
-            "4000 East",
-            "5800 West"
+            "5800 West",
+            "2300 West",
+            "1600 North"
         ],
         "coords": [
             {
@@ -23,9 +23,9 @@ let streets = [
         "name": "Pleasantview",
         "block": "4000 West",
         "choices": [
-            "3200 West",
             "4000 West",
-            "5800 West"
+            "6400 West",
+            "3200 West"
         ],
         "coords": [
             {
@@ -42,13 +42,13 @@ let streets = [
         "name": "Corbin Road",
         "block": "3200 West",
         "choices": [
+            "1600 North",
             "3200 West",
-            "5800 West",
-            "1500 East"
+            "4500 to 5800 East"
         ],
         "coords": [
             {
-                "lat": 47.7452106,
+                "lat": 47.74521060000001,
                 "lng": -116.9911766
             },
             {
@@ -61,9 +61,9 @@ let streets = [
         "name": "Maguire",
         "block": "2300 West",
         "choices": [
-            "2300 West",
-            "2400 East",
-            "3200 West"
+            "2500 to 5500 West",
+            "800 West",
+            "2300 West"
         ],
         "coords": [
             {
@@ -80,14 +80,14 @@ let streets = [
         "name": "Chase",
         "block": "800 West",
         "choices": [
-            "800 West",
-            "7200 East",
-            "1500 East"
+            "500 East",
+            "5500 East",
+            "800 West"
         ],
         "coords": [
             {
                 "lat": 47.7614837,
-                "lng": -116.9589043
+                "lng": -116.95890430000001
             },
             {
                 "lat": 47.7150747,
@@ -97,16 +97,16 @@ let streets = [
     },
     {
         "name": "Spokane Street",
-        "block": "0 (East/West Marker)",
+        "block": "East and West Marker. Spokane is Zero",
         "choices": [
-            "4000 West",
-            "0 (East/West Marker)",
-            "4000 East"
+            "1200 North",
+            "1500 East",
+            "East and West Marker. Spokane is Zero"
         ],
         "coords": [
             {
                 "lat": 47.7453261,
-                "lng": -116.9482613
+                "lng": -116.94826129999998
             },
             {
                 "lat": 47.6969385,
@@ -118,14 +118,14 @@ let streets = [
         "name": "Idaho",
         "block": "800 East",
         "choices": [
-            "5800 West",
-            "800 East",
-            "3200 East"
+            "800 North",
+            "3200 West",
+            "800 East"
         ],
         "coords": [
             {
-                "lat": 47.7847881,
-                "lng": -116.9372749
+                "lat": 47.78478810000001,
+                "lng": -116.93727490000002
             },
             {
                 "lat": 47.7110321,
@@ -137,18 +137,18 @@ let streets = [
         "name": "Syringa",
         "block": "1500 East",
         "choices": [
-            "1500 East",
-            "3200 East",
-            "5800 West"
+            "5500 East",
+            "1200 North",
+            "1500 East"
         ],
         "coords": [
             {
                 "lat": 47.7374185,
-                "lng": -116.9265461
+                "lng": -116.92654610000001
             },
             {
-                "lat": 47.7160564,
-                "lng": -116.9265461
+                "lat": 47.71605640000001,
+                "lng": -116.92654610000001
             }
         ]
     },
@@ -156,14 +156,14 @@ let streets = [
         "name": "Greensferry",
         "block": "2400 East",
         "choices": [
-            "800 West",
-            "5800 West",
+            "North and South Marker. 1st is Zero",
+            "1600 North",
             "2400 East"
         ],
         "coords": [
             {
                 "lat": 47.8057761,
-                "lng": -116.9113541
+                "lng": -116.91135409999998
             },
             {
                 "lat": 47.7016753,
@@ -175,9 +175,9 @@ let streets = [
         "name": "Cecil Road",
         "block": "3200 East",
         "choices": [
+            "North / South marker. 1st is Zero",
             "3200 East",
-            "0 (East/West Marker)",
-            "4000 East"
+            "3200 West"
         ],
         "coords": [
             {
@@ -194,9 +194,9 @@ let streets = [
         "name": "Highway 41",
         "block": "4000 East",
         "choices": [
-            "4000 East",
             "800 West",
-            "3200 West"
+            "4000 East",
+            "East and West Marker. Spokane is Zero"
         ],
         "coords": [
             {
@@ -205,7 +205,7 @@ let streets = [
             },
             {
                 "lat": 47.7109166,
-                "lng": -116.8948746
+                "lng": -116.89487460000001
             }
         ]
     },
@@ -213,9 +213,9 @@ let streets = [
         "name": "Meyer",
         "block": "5500 East",
         "choices": [
-            "4000 East",
             "5500 East",
-            "1500 East"
+            "North / South Marker",
+            "3200 West"
         ],
         "coords": [
             {
@@ -223,7 +223,7 @@ let streets = [
                 "lng": -116.8729019
             },
             {
-                "lat": 47.7231588,
+                "lat": 47.72315880000001,
                 "lng": -116.8729019
             }
         ]
@@ -233,8 +233,8 @@ let streets = [
         "block": "7200 East",
         "choices": [
             "7200 East",
-            "4000 West",
-            "800 West"
+            "North / South marker. 1st is Zero",
+            "North / South Marker"
         ],
         "coords": [
             {
@@ -249,11 +249,11 @@ let streets = [
     },
     {
         "name": "Wyoming",
-        "block": NaN,
+        "block": "11100 North",
         "choices": [
-            NaN,
-            "0 (East/West Marker)",
-            "800 West"
+            "7200 East",
+            "11100 North",
+            "300-800 North"
         ],
         "coords": [
             {
@@ -268,30 +268,30 @@ let streets = [
     },
     {
         "name": "Hayden",
-        "block": NaN,
+        "block": "9600 North",
         "choices": [
-            "2400 East",
-            NaN,
-            "5500 East"
+            "400 North",
+            "11100 North",
+            "9600 North"
         ],
         "coords": [
             {
                 "lat": 47.7599836,
-                "lng": -116.9805336
+                "lng": -116.98053360000002
             },
             {
                 "lat": 47.7591758,
-                "lng": -116.8509293
+                "lng": -116.85092930000002
             }
         ]
     },
     {
         "name": "Prairie",
-        "block": NaN,
+        "block": "4000 North",
         "choices": [
-            "5500 East",
-            "2300 West",
-            NaN
+            "2400 North",
+            "4800 East",
+            "4000 North"
         ],
         "coords": [
             {
@@ -300,22 +300,22 @@ let streets = [
             },
             {
                 "lat": 47.7448643,
-                "lng": -116.8509293
+                "lng": -116.85092930000002
             }
         ]
     },
     {
         "name": "Poleline",
-        "block": NaN,
+        "block": "2400 North",
         "choices": [
-            "7200 East",
-            NaN,
-            "3200 East"
+            "2400 North",
+            "East and West Marker. Spokane is Zero",
+            "7200 East"
         ],
         "coords": [
             {
                 "lat": 47.730318,
-                "lng": -116.8512726
+                "lng": -116.85127260000002
             },
             {
                 "lat": 47.7308953,
@@ -325,11 +325,11 @@ let streets = [
     },
     {
         "name": "15th / 16th Street",
-        "block": NaN,
+        "block": "1500 to 1600 North",
         "choices": [
-            "2300 West",
-            NaN,
-            "4000 West"
+            "1500 to 1600 North",
+            "3200 East",
+            "300 North"
         ],
         "coords": [
             {
@@ -344,11 +344,11 @@ let streets = [
     },
     {
         "name": "Mullan",
-        "block": NaN,
+        "block": "800 North",
         "choices": [
-            "800 West",
-            "5800 West",
-            NaN
+            "800 North",
+            "800 East",
+            "6400 West"
         ],
         "coords": [
             {
@@ -357,17 +357,17 @@ let streets = [
             },
             {
                 "lat": 47.7157676,
-                "lng": -116.967659
+                "lng": -116.96765900000001
             }
         ]
     },
     {
         "name": "Seltice",
-        "block": NaN,
+        "block": "300-800 North",
         "choices": [
-            NaN,
-            "4000 West",
-            "3200 West"
+            "300-800 North",
+            "3200 West",
+            "800 North"
         ],
         "coords": [
             {
@@ -376,17 +376,17 @@ let streets = [
             },
             {
                 "lat": 47.7021374,
-                "lng": -117.0407867
+                "lng": -117.04078670000001
             }
         ]
     },
     {
         "name": "1st Street",
-        "block": NaN,
+        "block": "North / South marker. 1st is Zero",
         "choices": [
-            NaN,
-            "3200 East",
-            "2300 West"
+            "3200 West",
+            "North / South marker. 1st is Zero",
+            "2400 North"
         ],
         "coords": [
             {
@@ -395,36 +395,36 @@ let streets = [
             },
             {
                 "lat": 47.7060074,
-                "lng": -116.9343352
+                "lng": -116.93433520000002
             }
         ]
     },
     {
         "name": "1st Street",
-        "block": NaN,
+        "block": "North and South Marker. 1st is Zero",
         "choices": [
-            "1500 East",
-            "3200 East",
-            NaN
+            "East and West Marker. Spokane is Zero",
+            "800 West",
+            "North and South Marker. 1st is Zero"
         ],
         "coords": [
             {
                 "lat": 47.7059496,
-                "lng": -116.9262242
+                "lng": -116.92622420000001
             },
             {
                 "lat": 47.7060218,
-                "lng": -116.91571
+                "lng": -116.91571000000002
             }
         ]
     },
     {
         "name": "1st Street",
-        "block": NaN,
+        "block": "North / South Marker",
         "choices": [
-            NaN,
-            "7200 East",
-            "3200 West"
+            "North / South Marker",
+            "800 North",
+            "1500 East"
         ],
         "coords": [
             {
@@ -439,11 +439,11 @@ let streets = [
     },
     {
         "name": "3rd Ave",
-        "block": NaN,
+        "block": "300 North",
         "choices": [
-            NaN,
-            "4000 West",
-            "7200 East"
+            "4800 East",
+            "300 North",
+            "6400 West"
         ],
         "coords": [
             {
@@ -458,11 +458,11 @@ let streets = [
     },
     {
         "name": "4th Ave",
-        "block": NaN,
+        "block": "400 North",
         "choices": [
-            "4000 West",
-            "5500 East",
-            NaN
+            "400 North",
+            "4500 to 5800 East",
+            "11100 North"
         ],
         "coords": [
             {
@@ -477,11 +477,11 @@ let streets = [
     },
     {
         "name": "Lincoln St",
-        "block": NaN,
+        "block": "500 East",
         "choices": [
-            "2400 East",
-            "800 East",
-            NaN
+            "400 North",
+            "500 East",
+            "1500 to 1600 North"
         ],
         "coords": [
             {
@@ -496,11 +496,11 @@ let streets = [
     },
     {
         "name": "Henry St",
-        "block": NaN,
+        "block": "300 East",
         "choices": [
-            "1500 East",
-            NaN,
-            "0 (East/West Marker)"
+            "300 North",
+            "300 East",
+            "North and South Marker. 1st is Zero"
         ],
         "coords": [
             {
@@ -515,11 +515,11 @@ let streets = [
     },
     {
         "name": "Midway Ave",
-        "block": NaN,
+        "block": "1600 North",
         "choices": [
-            "3200 East",
-            NaN,
-            "800 West"
+            "4500 to 5800 East",
+            "1600 North",
+            "North and South Marker. 1st is Zero"
         ],
         "coords": [
             {
@@ -534,11 +534,11 @@ let streets = [
     },
     {
         "name": "12th Ave",
-        "block": NaN,
+        "block": "1200 North",
         "choices": [
-            "2400 East",
-            "800 West",
-            NaN
+            "East and West Marker. Spokane is Zero",
+            "1200 North",
+            "North / South Marker"
         ],
         "coords": [
             {
@@ -553,11 +553,11 @@ let streets = [
     },
     {
         "name": "Huetter",
-        "block": NaN,
+        "block": "4800 East",
         "choices": [
+            "2500 to 5500 West",
             "3200 West",
-            NaN,
-            "4000 East"
+            "4800 East"
         ],
         "coords": [
             {
@@ -572,11 +572,11 @@ let streets = [
     },
     {
         "name": "Maplewood Ave",
-        "block": NaN,
+        "block": "4500 to 5800 East",
         "choices": [
-            "2300 West",
-            NaN,
-            "800 East"
+            "4000 East",
+            "4500 to 5800 East",
+            "North / South marker. 1st is Zero"
         ],
         "coords": [
             {
@@ -593,9 +593,9 @@ let streets = [
         "name": "Highway 41",
         "block": "4000 East",
         "choices": [
-            "2400 East",
-            "5800 West",
-            "4000 East"
+            "2300 West",
+            "4000 East",
+            "6400 West"
         ],
         "coords": [
             {
@@ -610,11 +610,11 @@ let streets = [
     },
     {
         "name": "Ross Point Rd",
-        "block": NaN,
+        "block": "4000 East",
         "choices": [
-            "4000 West",
+            "11100 North",
             "4000 East",
-            NaN
+            "300 North"
         ],
         "coords": [
             {
@@ -629,11 +629,11 @@ let streets = [
     },
     {
         "name": "Ponderosa Blvd",
-        "block": NaN,
+        "block": "2400 to 4000",
         "choices": [
-            "5500 East",
-            "3200 West",
-            NaN
+            "2400 East",
+            "1600 North",
+            "2400 to 4000"
         ],
         "coords": [
             {
@@ -648,11 +648,11 @@ let streets = [
     },
     {
         "name": "Riverbend Ave",
-        "block": NaN,
+        "block": "2500 to 5500 West",
         "choices": [
-            NaN,
+            "300-800 North",
             "4000 West",
-            "2400 East"
+            "2500 to 5500 West"
         ],
         "coords": [
             {
@@ -667,11 +667,11 @@ let streets = [
     },
     {
         "name": "Point Pkwy",
-        "block": NaN,
+        "block": "5900 West",
         "choices": [
-            NaN,
-            "0 (East/West Marker)",
-            "800 East"
+            "5800 West",
+            "1200 North",
+            "5900 West"
         ],
         "coords": [
             {
@@ -686,11 +686,11 @@ let streets = [
     },
     {
         "name": "Baugh Way",
-        "block": NaN,
+        "block": "6400 West",
         "choices": [
-            "7200 East",
-            "4000 East",
-            NaN
+            "11100 North",
+            "2300 West",
+            "6400 West"
         ],
         "coords": [
             {
@@ -700,272 +700,6 @@ let streets = [
             {
                 "lat": 47.7022332,
                 "lng": -117.0280459
-            }
-        ]
-    },
-    {
-        "name": "Greensferry Elementary",
-        "block": NaN,
-        "choices": [
-            NaN,
-            "2400 East",
-            "1500 East"
-        ],
-        "coords": [
-            {
-                "lat": 47.7375412,
-                "lng": -116.9184458
-            },
-            {
-                "lat": 47.7375412,
-                "lng": -116.9184458
-            }
-        ]
-    },
-    {
-        "name": "Prairie View Elementary School",
-        "block": NaN,
-        "choices": [
-            "4000 East",
-            NaN,
-            "0 (East/West Marker)"
-        ],
-        "coords": [
-            {
-                "lat": 47.7303325,
-                "lng": -116.9156992
-            },
-            {
-                "lat": 47.7303325,
-                "lng": -116.9156992
-            }
-        ]
-    },
-    {
-        "name": "Ponderosa Elementary",
-        "block": NaN,
-        "choices": [
-            "5800 West",
-            "7200 East",
-            NaN
-        ],
-        "coords": [
-            {
-                "lat": 47.7034371,
-                "lng": -116.9000566
-            },
-            {
-                "lat": 47.7034371,
-                "lng": -116.9000566
-            }
-        ]
-    },
-    {
-        "name": "Seltice Elementary",
-        "block": NaN,
-        "choices": [
-            NaN,
-            "5800 West",
-            "3200 West"
-        ],
-        "coords": [
-            {
-                "lat": 47.7182652,
-                "lng": -116.958636
-            },
-            {
-                "lat": 47.7182652,
-                "lng": -116.958636
-            }
-        ]
-    },
-    {
-        "name": "Mullan Trail Elementary",
-        "block": NaN,
-        "choices": [
-            NaN,
-            "4000 East",
-            "2300 West"
-        ],
-        "coords": [
-            {
-                "lat": 47.7196185,
-                "lng": -116.9525957
-            },
-            {
-                "lat": 47.7196185,
-                "lng": -116.9525957
-            }
-        ]
-    },
-    {
-        "name": "Fredrick Post Elementary",
-        "block": NaN,
-        "choices": [
-            "800 West",
-            "4000 East",
-            NaN
-        ],
-        "coords": [
-            {
-                "lat": 47.7159589,
-                "lng": -116.951732
-            },
-            {
-                "lat": 47.7159589,
-                "lng": -116.951732
-            }
-        ]
-    },
-    {
-        "name": "West Ridge Elementary",
-        "block": NaN,
-        "choices": [
-            NaN,
-            "2300 West",
-            "5800 West"
-        ],
-        "coords": [
-            {
-                "lat": 47.7254611,
-                "lng": -116.9682705
-            },
-            {
-                "lat": 47.7254611,
-                "lng": -116.9682705
-            }
-        ]
-    },
-    {
-        "name": "Post Falls Middle School",
-        "block": NaN,
-        "choices": [
-            "2300 West",
-            NaN,
-            "3200 East"
-        ],
-        "coords": [
-            {
-                "lat": 47.7268107,
-                "lng": -116.9452786
-            },
-            {
-                "lat": 47.7268107,
-                "lng": -116.9452786
-            }
-        ]
-    },
-    {
-        "name": "Post Falls Jr. High School",
-        "block": NaN,
-        "choices": [
-            "1500 East",
-            NaN,
-            "800 West"
-        ],
-        "coords": [
-            {
-                "lat": 47.7196366,
-                "lng": -116.9525582
-            },
-            {
-                "lat": 47.7196366,
-                "lng": -116.9525582
-            }
-        ]
-    },
-    {
-        "name": "River City Middle School",
-        "block": NaN,
-        "choices": [
-            "3200 West",
-            "4000 East",
-            NaN
-        ],
-        "coords": [
-            {
-                "lat": 47.7271066,
-                "lng": -116.9560289
-            },
-            {
-                "lat": 47.7271066,
-                "lng": -116.9560289
-            }
-        ]
-    },
-    {
-        "name": "New Vision High School",
-        "block": NaN,
-        "choices": [
-            NaN,
-            "3200 West",
-            "5500 East"
-        ],
-        "coords": [
-            {
-                "lat": 47.715995,
-                "lng": -116.9504392
-            },
-            {
-                "lat": 47.715995,
-                "lng": -116.9504392
-            }
-        ]
-    },
-    {
-        "name": "Post Falls High School",
-        "block": NaN,
-        "choices": [
-            NaN,
-            "3200 West",
-            "4000 East"
-        ],
-        "coords": [
-            {
-                "lat": 47.7303252,
-                "lng": -116.9133174
-            },
-            {
-                "lat": 47.7303252,
-                "lng": -116.9133174
-            }
-        ]
-    },
-    {
-        "name": "Genesis Prep",
-        "block": NaN,
-        "choices": [
-            "4000 West",
-            "3200 West",
-            NaN
-        ],
-        "coords": [
-            {
-                "lat": 47.7263281,
-                "lng": -116.9033661
-            },
-            {
-                "lat": 47.7263281,
-                "lng": -116.9033661
-            }
-        ]
-    },
-    {
-        "name": "St. Dominic's Girls School",
-        "block": NaN,
-        "choices": [
-            "5800 West",
-            "800 East",
-            NaN
-        ],
-        "coords": [
-            {
-                "lat": 47.6866131,
-                "lng": -117.0205213
-            },
-            {
-                "lat": 47.6866131,
-                "lng": -117.0205213
             }
         ]
     }
